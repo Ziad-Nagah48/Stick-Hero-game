@@ -1,20 +1,7 @@
-/*
-If you want to know how this game was made, check out this video, that explains how it's made: 
-
-https://youtu.be/eue3UdFvwPo
-
-Follow him on twitter for more: https://twitter.com/HunorBorbely
-
-author : Hunor Marton Borbely 
-
-*/
-
-// Extend the base functionality of JavaScript
 Array.prototype.last = function () {
   return this[this.length - 1];
 };
 
-// A sinus function that acceps degrees instead of radians
 Math.sinus = function (degree) {
   return Math.sin((degree / 180) * Math.PI);
 };
@@ -261,7 +248,7 @@ function animate(timestamp) {
         sticks.push({
           x: nextPlatform.x + nextPlatform.w,
           length: 0,
-          rotation: 0
+          rotation: 0,
         });
         phase = "waiting";
       }
